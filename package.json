@@ -4,7 +4,8 @@
   "description": "a draggable patch template for Vue.js",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --color --process --compress --inline --open --config ./build/dev.js"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --color --process --compress --inline --open --config ./build/dev.js",
+    "build": "cross-env NODE_ENV=prodection webpack --config ./build/prod.js"
   },
   "author": "hina_ge@163.com",
   "license": "ISC",

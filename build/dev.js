@@ -10,7 +10,10 @@ let config  = WebpackMerge(baseConfig, {
         publicPath: '/'
     },
     resolve: {
-        extensions: ['.js', '.vue', '.css', '.scss']
+        alias: {
+            '~': path.resolve(__dirname, '../src'),
+            '@': path.resolve(__dirname, '../lib')
+        }
     },
     module: {
         rules: [

@@ -1,8 +1,18 @@
 <template>
-    <div class="container">test</div>
+    <div class="container">
+        <patch :bottom="100" class="my-patch">
+            <p>drag me</p>
+        </patch>
+    </div>
 </template>
 
-<script></script>
+<script>
+    import Vue from 'vue';
+    import Patch from '~/index.js';
+    console.log(Patch);
+    Vue.use(Patch);
+    export default {};
+</script>
 
 <style lang="scss">
     * {
@@ -22,5 +32,13 @@
         max-width: 750px;
         background: #eee;
         margin: 0 auto;
+
+        .my-patch {
+            width: 50px;
+            height: 50px;
+            background: #ddd;
+            text-align: center;
+            border: 1px solid #333;
+        }
     }
 </style>
