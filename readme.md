@@ -31,6 +31,8 @@ npm install vue-draggable-patch -S
      * or
      * Vue.component(Patch.name, Patch);
      */
+    
+    export default {};
 </script>
 
 <style>
