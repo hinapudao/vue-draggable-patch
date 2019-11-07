@@ -6,7 +6,8 @@ module.exports = api => {
         ['@babel/plugin-transform-runtime', {
             corejs: 3,
             useESModules: true
-        }]
+        }],
+        '@babel/plugin-transform-modules-umd'
     ];
 
     return {

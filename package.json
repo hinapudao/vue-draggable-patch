@@ -7,6 +7,10 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --color --process --compress --inline --open --config ./build/dev.js",
     "build": "cross-env NODE_ENV=prodection webpack --config ./build/prod.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hinapudao/vue-draggable-patch.git"
+  },
   "author": "hina_ge@163.com",
   "license": "ISC",
   "devDependencies": {

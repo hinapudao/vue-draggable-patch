@@ -1,16 +1,17 @@
 <template>
     <div class="container">
         <patch :bottom="100" class="my-patch">
-            <p>drag me</p>
+            <img src="https://via.placeholder.com/50x80" alt="">
         </patch>
     </div>
 </template>
 
 <script>
     import Vue from 'vue';
-    import Patch from '~/index.js';
+    import Patch from '@/index.js';
     console.log(Patch);
-    Vue.use(Patch);
+    // Vue.use(Patch);
+    Vue.component(Patch.name, Patch);
     export default {};
 </script>
 
@@ -35,10 +36,14 @@
 
         .my-patch {
             width: 50px;
-            height: 50px;
+            // height: 50px;
             background: #ddd;
             text-align: center;
             border: 1px solid #333;
+
+            img {
+                display: block;
+            }
         }
     }
 </style>

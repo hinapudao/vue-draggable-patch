@@ -12,7 +12,7 @@ let prodConfig = WebpackMerge(baseConfig, {
         libraryExport: 'default',
         umdNamedDefine: true
     },
-    mode: 'development'
+    mode: 'production'
 });
 
 module.exports = prodConfig;
