@@ -21,18 +21,13 @@
         padding: 0;
     }
 
-    html,
-    body {
-        width: 100%;
-        height: 100%;
-    }
-
     .container {
         width: 100%;
-        height: 100%;
+        height: 1000px;
         max-width: 750px;
         background: #eee;
         margin: 0 auto;
+        background: linear-gradient(#ffaa3c,#e62828);
 
         .my-patch {
             width: 50px;

@@ -1,6 +1,6 @@
 {
   "name": "vue-draggable-patch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a draggable patch template for Vue.js",
   "main": "index.js",
   "scripts": {

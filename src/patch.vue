@@ -2,9 +2,9 @@
     <div
         ref="cube"
         :style="`position: fixed; bottom: ${patchBottom}px; right: ${patchRight}px;`"
-        @touchstart="cubeStart($event)"
-        @touchmove="cubeMove($event)"
-        @touchend="cubeEnd($event)">
+        @touchstart.prevent="cubeStart($event)"
+        @touchmove.prevent="cubeMove($event)"
+        @touchend.prevent="cubeEnd($event)">
         <slot></slot>        
     </div>
 </template>
