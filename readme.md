@@ -45,3 +45,8 @@ npm install vue-draggable-patch -S
 ## 语法规范
 
 VueDraggablePatch通过`umd`兼容模式打包，支持`amd`、`commonsjs`、`commonsjs2`、`window`全局变量等方式引入。
+
+## 版本
+
++ `1.0.1`: bug fix, 贴片滑动过程阻止默认事件
++ `1.0.0`: 基本交互完成
