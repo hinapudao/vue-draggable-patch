@@ -42,6 +42,12 @@ npm install vue-draggable-patch -S
 </style>
 ```
 
+## API
+
+| key | 描述 | 类型 |
+| ----- | ----- | ----- |
+| bottom | 贴片距底部的初始距离 | Number |
+
 ## 语法规范
 
 VueDraggablePatch通过`umd`兼容模式打包，支持`amd`、`commonsjs`、`commonsjs2`、`window`全局变量等方式引入。

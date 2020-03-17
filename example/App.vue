@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <patch :bottom="100" class="my-patch">
+        <patch class="my-patch">
             <img src="https://via.placeholder.com/50x80" alt="">
         </patch>
     </div>
@@ -8,10 +8,9 @@
 
 <script>
     import Vue from 'vue';
-    import Patch from '@/index.js';
-    console.log(Patch);
-    // Vue.use(Patch);
-    Vue.component(Patch.name, Patch);
+    import Patch from '~/index.js';
+
+    Vue.use(Patch);
     export default {};
 </script>
 
@@ -21,20 +20,19 @@
         padding: 0;
     }
 
+    body {
+        -webkit-overflow-scrolling:touch;
+    }
+
     .container {
         width: 100%;
         height: 1000px;
         max-width: 750px;
-        background: #eee;
         margin: 0 auto;
         background: linear-gradient(#ffaa3c,#e62828);
 
         .my-patch {
             width: 50px;
-            // height: 50px;
-            background: #ddd;
-            text-align: center;
-            border: 1px solid #333;
 
             img {
                 display: block;

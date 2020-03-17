@@ -4,7 +4,8 @@
         :style="`position: fixed; bottom: ${patchBottom}px; right: ${patchRight}px;`"
         @touchstart.prevent="cubeStart($event)"
         @touchmove.prevent="cubeMove($event)"
-        @touchend.prevent="cubeEnd($event)">
+        @touchend.prevent="cubeEnd($event)"
+        @touchcancel.prevent="cubeEnd($event)">
         <slot></slot>        
     </div>
 </template>
